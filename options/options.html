@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="../css/foundation.css">
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    
+    <form class="callout text-center">
+        <h2>Jira Ticket Opener Settings</h2>
+        <div class="floated-label-wrapper">
+            <label for="txtBaseUrl" class="show">Base JIRA Url </label>
+            <input type="text" id="txtBaseUrl" placeholder="Base JIRA Url (example: https://mycompany.atlassian.net/)">
+        </div>
+        <div class="floated-label-wrapper">
+            <label for="txtTicketPrefix" class="show">Default Ticket Prefix</label>
+            <input type="text" id="txtTicketPrefix" placeholder="Optional Default Ticket Prefix (example: 'is' for tickets IDs that look like this: is-123 )">
+        </div>
+        <div class="floated-label-wrapper">
+            <label for="selectNewTab" class="show">Open in New Tab</label>
+            <select type="text" id="selectNewTab">
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+        </div>
+        <input class="button expanded" type="submit" value="Save & Close" id="btnSave">
+    </form>
+
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../js/what-input.js"></script>
+    <script type="text/javascript" src="../js/foundation.min.js"></script>
+    <script type="text/javascript" src="options.js"></script>
+</body>
+</html>
